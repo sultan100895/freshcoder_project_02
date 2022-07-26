@@ -1,0 +1,143 @@
+/* =========================
+===== recent css starts =====
+============================*/
+#recent{
+  padding-bottom: 750px;
+  padding-top: 80px;
+  background: #f7f7f7;
+  .heading{
+    h3{
+      font-weight: 700;
+      font-size: 36px;
+    }
+    p{
+      color: #696969;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+  }
+  .routine-nav{
+    margin-top: 10px;
+    display: flex;
+    ul{
+      justify-content: space-between; 
+      align-items: center;
+    }
+  }
+  .nav-tabs{
+    border: none;
+    .nav-item{
+      position: relative;
+
+      &::after{
+        content: "";
+        height: 1px;
+        width: 7px;
+        background: #696969;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      
+      
+
+      &:last-child::after{
+        display: none;
+      }
+
+      &:first-child{
+        margin-left: 0;
+      }
+
+      .nav-link{
+        border: none;
+        text-transform: uppercase;
+        color: #000;
+        font-size: 14px;
+        font-weight: 700;
+        border-radius: 0;
+        line-height: 50px;
+        width: 100%;
+        &.active{
+          color: #53a92c;
+          background: #f7f7f7;
+        }
+      }
+    }
+  }
+
+  .tab-content{
+    
+    ul{
+      li{
+        background: #ffffff;
+        width: 31.54%;
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        h4{
+          font-size: 16px;
+          font-weight: 700;
+          padding-left: 15px;
+          padding-top: 15px;
+        }
+        h5{
+          font-size: 14px;
+          font-weight: 400;
+          padding-left: 15px;
+          padding-top: 5px;
+          padding-bottom: 15px;
+          span{
+            color: #53a92c;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+#routine .tab-content ul li {
+  
+}
+#routine .tab-content ul li.active {
+  background: var(--brand-cl);
+}
+#routine .tab-content ul li.active p {
+  color: #fff;
+}
+#routine .tab-content ul li.active i {
+  color: #fff;
+  transition: all linear 0.4s;
+}
+#routine .tab-content ul li:hover.active i {
+  color: #1dd2f2;
+}
+#routine .tab-content ul li p {
+  font-family: var(--pfont);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--hcl);
+}
+#routine .tab-content ul li p:first-of-type {
+  text-transform: capitalize;
+}
+#routine .tab-content ul li p:last-of-type {
+  font-size: 14px;
+}
+#routine .tab-content ul li i {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/* ========================
+===== recent css ends =====
+===========================*/

@@ -1,0 +1,46 @@
+/* =========================
+===== about css starts =====
+============================*/
+#about{
+  margin-top: 120px;
+  .text-area{
+    h1{
+      font-style: 36px;
+      font-weight: 700;
+    }
+    p{
+      text-align: justify;
+      font-size: 14px;
+      color: #696969;
+    }
+    .design{
+      color: #53a92c;
+      font-weight: 600;
+      margin-bottom: 20px !important;
+      margin-top: 20px !important;
+    }
+    .cta-btn{
+      margin-bottom: 100px;
+      margin-top: 50px;
+      transition: all linear 0.4s;
+      padding: 10px 25px;
+      border: 1px solid #53a92c;
+      font-size: 14px;
+      font-weight: 600;
+      color: #53a92c;
+
+      &:first-of-type{
+        margin-right: 25px;
+      }
+
+      &:hover{
+        background: #53a92c;
+        border-color: #53a92c;
+        color: #fff;
+      }
+    }
+  }
+}
+/* =======================
+===== about css ends =====
+==========================*/

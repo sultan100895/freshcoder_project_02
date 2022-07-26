@@ -1,0 +1,34 @@
+/*=============================
+  ===== common css starts =====
+===============================*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img{
+  vertical-align: middle;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+.container{
+  width: 1140px;
+  margin: 0 auto;
+}
+/*===========================
+  ===== common css ends =====
+=============================*/
+
+@import 'nav.scss';
+@import 'banner.scss';
+@import 'about.scss';
+@import 'recent.scss';
+@import 'counter.scss';
+@import 'collection.scss';
+@import 'events.scss';
+@import 'sponsors.scss';
+@import 'totop.scss';

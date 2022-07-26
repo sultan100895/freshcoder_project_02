@@ -1,0 +1,96 @@
+/* ==========================
+===== events css starts =====
+=============================*/
+#events{
+  padding-top: 80px;
+  padding-bottom: 80px;
+  .heading{
+    h3{
+      font-weight: 700;
+      font-size: 36px;
+    }
+    p{
+      color: #696969;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+  }
+  .items{
+    margin-top: 50px;
+    border: 1px solid #f3f3f3;
+    .image-area{
+      position: relative;
+      .date{
+        height: 70px;
+        width: 70px;
+        background: #53a92c;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        h3{
+          font-size: 36px;
+          font-weight: 700;
+          margin-top: 5px;
+        }
+        h5{
+          font-size: 14px;
+          font-weight: 400;
+        }
+      }
+    }
+    .text-area{
+      padding: 20px;
+      h2{
+        font-size: 22px;
+        font-weight: 700;
+      }
+      .time{
+        ul{
+          display: flex;
+          padding-left: 0;
+          li{
+            margin-right: 30px;
+            a{
+              display: flex;
+              color: #696969;
+              font-size: 14px;
+              .icon{
+                margin-right: 5px;
+              }
+            }
+          }
+        }
+      }
+      p{
+        color: #696969;
+        font-size: 14px;
+      }
+      .cta-btn{
+        margin-bottom: 15px;
+        margin-top: 15px;
+        transition: all linear 0.4s;
+        padding: 10px 25px;
+        border: 1px solid #53a92c;
+        font-size: 14px;
+        font-weight: 600;
+        color: #53a92c;
+
+        &:first-of-type{
+          margin-right: 25px;
+        }
+
+        &:hover{
+          background: #53a92c;
+          border-color: #53a92c;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+
+
+/* ========================
+===== events css ends =====
+===========================*/

@@ -1,0 +1,467 @@
+/*=============================
+  ===== common css starts =====
+===============================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+img {
+  vertical-align: middle; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+.container {
+  width: 1140px;
+  margin: 0 auto; }
+
+/*===========================
+  ===== common css ends =====
+=============================*/
+/*==========================
+  ===== nav css starts =====
+============================*/
+nav .navbar {
+  height: 100px;
+  display: flex; }
+  nav .navbar .logo {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    align-items: center; }
+    nav .navbar .logo img {
+      width: 100%; }
+  nav .navbar .nav-list {
+    width: 900px;
+    height: 100px; }
+    nav .navbar .nav-list ul {
+      display: flex;
+      float: right; }
+      nav .navbar .nav-list ul li a {
+        line-height: 100px;
+        font-family: var(--mf);
+        font-size: 15px;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 15px 20px;
+        color: #222;
+        transition: all linear 0.4s;
+        -moz-transition: all linear 0.4s;
+        -o-transition: all linear 0.4s;
+        -ms-transition: all linear 0.4s;
+        -webkit-transition: all linear 0.4s;
+        position: relative; }
+        nav .navbar .nav-list ul li a:hover {
+          color: #53a92c; }
+        nav .navbar .nav-list ul li a i {
+          position: absolute;
+          right: 5px;
+          top: 15px; }
+
+/*========================
+  ===== nav css ends =====
+==========================*/
+/* ==========================
+===== banner css starts =====
+=============================*/
+#banner .banner-slider .slider-item {
+  position: relative;
+  z-index: 1; }
+  #banner .banner-slider .slider-item::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1; }
+  #banner .banner-slider .slider-item .banner-text h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 240px; }
+  #banner .banner-slider .slider-item .banner-text h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 15px; }
+  #banner .banner-slider .slider-item .banner-text h5 {
+    font-size: 14px;
+    font-weight: 700; }
+  #banner .banner-slider .slider-item .banner-text .cta-btn {
+    margin-bottom: 200px;
+    margin-top: 60px;
+    transition: all linear 0.4s;
+    padding: 10px 25px;
+    border: 1px solid #53a92c;
+    font-size: 14px;
+    font-weight: 600;
+    color: #53a92c; }
+    #banner .banner-slider .slider-item .banner-text .cta-btn:first-of-type {
+      margin-right: 25px; }
+    #banner .banner-slider .slider-item .banner-text .cta-btn:hover {
+      background: #53a92c;
+      border-color: #53a92c;
+      color: #fff; }
+#banner .banner-slider .bg1 {
+  background: url("../images/slider-img-1.jpg") no-repeat center/cover; }
+#banner .banner-slider .bg2 {
+  background: url("../images/slider-img-2.jpg") no-repeat center/cover; }
+#banner .banner-slider .bg3 {
+  background: url("../images/slider-img-3.jpg") no-repeat center/cover; }
+#banner .banner-slider .left-arrow {
+  transition: all linear 0.4s;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  font-size: 24px;
+  color: #53a92c;
+  border: 1px solid #53a92c;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+  left: 20px;
+  bottom: 50%;
+  transform: translateY(-50%);
+  z-index: 9; }
+  #banner .banner-slider .left-arrow:hover {
+    background: #53a92c;
+    border-color: #53a92c;
+    color: #fff; }
+#banner .banner-slider .right-arrow {
+  transition: all linear 0.4s;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  font-size: 24px;
+  color: #53a92c;
+  border: 1px solid #53a92c;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  bottom: 50%;
+  transform: translateY(-50%);
+  z-index: 9; }
+  #banner .banner-slider .right-arrow:hover {
+    background: #53a92c;
+    border-color: #53a92c;
+    color: #fff; }
+
+/* ========================
+===== banner css ends =====
+===========================*/
+/* =========================
+===== about css starts =====
+============================*/
+#about {
+  margin-top: 120px; }
+  #about .text-area h1 {
+    font-style: 36px;
+    font-weight: 700; }
+  #about .text-area p {
+    text-align: justify;
+    font-size: 14px;
+    color: #696969; }
+  #about .text-area .design {
+    color: #53a92c;
+    font-weight: 600;
+    margin-bottom: 20px !important;
+    margin-top: 20px !important; }
+  #about .text-area .cta-btn {
+    margin-bottom: 100px;
+    margin-top: 50px;
+    transition: all linear 0.4s;
+    padding: 10px 25px;
+    border: 1px solid #53a92c;
+    font-size: 14px;
+    font-weight: 600;
+    color: #53a92c; }
+    #about .text-area .cta-btn:first-of-type {
+      margin-right: 25px; }
+    #about .text-area .cta-btn:hover {
+      background: #53a92c;
+      border-color: #53a92c;
+      color: #fff; }
+
+/* =======================
+===== about css ends =====
+==========================*/
+/* =========================
+===== recent css starts =====
+============================*/
+#recent {
+  padding-bottom: 750px;
+  padding-top: 80px;
+  background: #f7f7f7; }
+  #recent .heading h3 {
+    font-weight: 700;
+    font-size: 36px; }
+  #recent .heading p {
+    color: #696969;
+    font-size: 14px;
+    margin-top: 10px; }
+  #recent .routine-nav {
+    margin-top: 10px;
+    display: flex; }
+    #recent .routine-nav ul {
+      justify-content: space-between;
+      align-items: center; }
+  #recent .nav-tabs {
+    border: none; }
+    #recent .nav-tabs .nav-item {
+      position: relative; }
+      #recent .nav-tabs .nav-item::after {
+        content: "";
+        height: 1px;
+        width: 7px;
+        background: #696969;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%); }
+      #recent .nav-tabs .nav-item:last-child::after {
+        display: none; }
+      #recent .nav-tabs .nav-item:first-child {
+        margin-left: 0; }
+      #recent .nav-tabs .nav-item .nav-link {
+        border: none;
+        text-transform: uppercase;
+        color: #000;
+        font-size: 14px;
+        font-weight: 700;
+        border-radius: 0;
+        line-height: 50px;
+        width: 100%; }
+        #recent .nav-tabs .nav-item .nav-link.active {
+          color: #53a92c;
+          background: #f7f7f7; }
+  #recent .tab-content ul li {
+    background: #ffffff;
+    width: 31.54%;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px; }
+    #recent .tab-content ul li h4 {
+      font-size: 16px;
+      font-weight: 700;
+      padding-left: 15px;
+      padding-top: 15px; }
+    #recent .tab-content ul li h5 {
+      font-size: 14px;
+      font-weight: 400;
+      padding-left: 15px;
+      padding-top: 5px;
+      padding-bottom: 15px; }
+      #recent .tab-content ul li h5 span {
+        color: #53a92c; }
+
+#routine .tab-content ul li.active {
+  background: var(--brand-cl); }
+
+#routine .tab-content ul li.active p {
+  color: #fff; }
+
+#routine .tab-content ul li.active i {
+  color: #fff;
+  transition: all linear 0.4s; }
+
+#routine .tab-content ul li:hover.active i {
+  color: #1dd2f2; }
+
+#routine .tab-content ul li p {
+  font-family: var(--pfont);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--hcl); }
+
+#routine .tab-content ul li p:first-of-type {
+  text-transform: capitalize; }
+
+#routine .tab-content ul li p:last-of-type {
+  font-size: 14px; }
+
+#routine .tab-content ul li i {
+  font-size: 40px;
+  margin-bottom: 10px; }
+
+/* ========================
+===== recent css ends =====
+===========================*/
+/* ===========================
+===== counter css starts =====
+==============================*/
+#counter {
+  background: #64b141; }
+  #counter .items {
+    padding-top: 80px;
+    padding-bottom: 80px; }
+    #counter .items i {
+      font-size: 48px; }
+    #counter .items h5 {
+      font-size: 36px;
+      font-weight: 700;
+      margin-top: 10px; }
+    #counter .items h4 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-top: 10px; }
+
+/* =========================
+===== counter css ends =====
+============================*/
+/* ==============================
+===== collection css starts =====
+=================================*/
+#collection {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background: #f7f7f7; }
+  #collection .heading h3 {
+    font-weight: 700;
+    font-size: 36px; }
+  #collection .heading p {
+    color: #696969;
+    font-size: 14px;
+    margin-top: 10px; }
+  #collection .item {
+    border: 1px solid #eeeded;
+    margin-top: 50px; }
+    #collection .item .image-area {
+      position: relative;
+      overflow: hidden; }
+      #collection .item .image-area:hover .cart {
+        top: 0px; }
+      #collection .item .image-area .cart {
+        height: 50px;
+        width: 90%;
+        background: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        left: 50%;
+        top: -50px;
+        transform: translateY(-50%);
+        transform: translateX(-50%);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all linear 0.3s; }
+        #collection .item .image-area .cart a {
+          color: #fff;
+          border: 1px solid #fff;
+          border-radius: 5px;
+          padding: 5px 5px; }
+    #collection .item h5 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-top: 10px; }
+    #collection .item h4 {
+      font-size: 16px;
+      font-weight: 700; }
+
+/* ============================
+===== collection css ends =====
+===============================*/
+/* ==========================
+===== events css starts =====
+=============================*/
+#events {
+  padding-top: 80px;
+  padding-bottom: 80px; }
+  #events .heading h3 {
+    font-weight: 700;
+    font-size: 36px; }
+  #events .heading p {
+    color: #696969;
+    font-size: 14px;
+    margin-top: 10px; }
+  #events .items {
+    margin-top: 50px;
+    border: 1px solid #f3f3f3; }
+    #events .items .image-area {
+      position: relative; }
+      #events .items .image-area .date {
+        height: 70px;
+        width: 70px;
+        background: #53a92c;
+        position: absolute;
+        bottom: 0;
+        left: 0; }
+        #events .items .image-area .date h3 {
+          font-size: 36px;
+          font-weight: 700;
+          margin-top: 5px; }
+        #events .items .image-area .date h5 {
+          font-size: 14px;
+          font-weight: 400; }
+    #events .items .text-area {
+      padding: 20px; }
+      #events .items .text-area h2 {
+        font-size: 22px;
+        font-weight: 700; }
+      #events .items .text-area .time ul {
+        display: flex;
+        padding-left: 0; }
+        #events .items .text-area .time ul li {
+          margin-right: 30px; }
+          #events .items .text-area .time ul li a {
+            display: flex;
+            color: #696969;
+            font-size: 14px; }
+            #events .items .text-area .time ul li a .icon {
+              margin-right: 5px; }
+      #events .items .text-area p {
+        color: #696969;
+        font-size: 14px; }
+      #events .items .text-area .cta-btn {
+        margin-bottom: 15px;
+        margin-top: 15px;
+        transition: all linear 0.4s;
+        padding: 10px 25px;
+        border: 1px solid #53a92c;
+        font-size: 14px;
+        font-weight: 600;
+        color: #53a92c; }
+        #events .items .text-area .cta-btn:first-of-type {
+          margin-right: 25px; }
+        #events .items .text-area .cta-btn:hover {
+          background: #53a92c;
+          border-color: #53a92c;
+          color: #fff; }
+
+/* ========================
+===== events css ends =====
+===========================*/
+/* ============================
+===== sponsors css starts =====
+===============================*/
+#sponsors {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background: #f7f7f7; }
+  #sponsors .heading h3 {
+    font-weight: 700;
+    font-size: 36px; }
+  #sponsors .heading p {
+    color: #696969;
+    font-size: 14px;
+    margin-top: 10px; }
+  #sponsors .image-area {
+    margin-top: 50px; }
+    #sponsors .image-area img {
+      cursor: pointer; }
+
+/* ==========================
+===== sponsors css ends =====
+=============================*/
+/* ==========================
+===== to top css starts =====
+=============================*/
+/* ========================
+===== to top css ends =====
+===========================*/

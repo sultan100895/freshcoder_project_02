@@ -1,0 +1,54 @@
+/*==========================
+  ===== nav css starts =====
+============================*/
+nav{
+  .navbar{
+    height: 100px;
+    display: flex;
+    .logo{
+      width: 200px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      img{
+        width: 100%;
+      }
+    }
+    .nav-list{
+      width: 900px;
+      height: 100px;
+      ul{
+        display: flex;
+        float: right;
+        li{
+          a{
+            line-height: 100px;
+            font-family: var(--mf);
+            font-size: 15px;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 15px 20px;
+            color: #222;
+            transition: all linear 0.4s;
+            -moz-transition: all linear 0.4s;
+            -o-transition: all linear 0.4s;
+            -ms-transition: all linear 0.4s;
+            -webkit-transition: all linear 0.4s;
+            &:hover{
+              color: #53a92c;
+            }
+            position: relative;
+            i{
+              position: absolute;
+              right: 5px;
+              top: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/*========================
+  ===== nav css ends =====
+==========================*/

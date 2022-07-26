@@ -1,0 +1,125 @@
+/* ==========================
+===== banner css starts =====
+=============================*/
+#banner{
+  .banner-slider{
+    .slider-item{
+      position: relative;
+      z-index: 1;
+      &::after{
+        content: "";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+      }
+      .banner-text{
+        h4{
+          font-size: 16px;
+          font-weight: 700;
+          margin-top: 240px;
+        }
+
+        h1{
+          font-size: 40px;
+          font-weight: 700;
+          margin-top: 15px;
+
+        }
+
+        h5{
+          font-size: 14px;
+          font-weight: 700;
+        }
+
+        .cta-btn{
+          margin-bottom: 200px;
+          margin-top: 60px;
+          transition: all linear 0.4s;
+          padding: 10px 25px;
+          border: 1px solid #53a92c;
+          font-size: 14px;
+          font-weight: 600;
+          color: #53a92c;
+
+          &:first-of-type{
+            margin-right: 25px;
+          }
+
+          &:hover{
+            background: #53a92c;
+            border-color: #53a92c;
+            color: #fff;
+          }
+        }
+      }
+    }
+
+
+    .bg1{
+      background: url("../images/slider-img-1.jpg") no-repeat center / cover;
+    }
+
+    .bg2{
+      background: url("../images/slider-img-2.jpg") no-repeat center / cover;
+    }
+
+    .bg3{
+      background: url("../images/slider-img-3.jpg") no-repeat center / cover;
+    }
+
+    .left-arrow{
+      transition: all linear 0.4s;
+      height: 40px;
+      width: 40px;
+      line-height: 40px;
+      font-size: 24px;
+      color: #53a92c;
+      border: 1px solid #53a92c;
+      border-radius: 5px;
+      text-align: center;
+      cursor: pointer;
+      position: absolute;
+      left: 20px;
+      bottom: 50%;
+      transform: translateY(-50%);
+      z-index: 9;
+
+      &:hover{
+        background: #53a92c;
+        border-color: #53a92c;
+        color: #fff;
+      }
+    }
+
+    .right-arrow{
+      transition: all linear 0.4s;
+      height: 40px;
+      width: 40px;
+      line-height: 40px;
+      font-size: 24px;
+      color: #53a92c;
+      border: 1px solid #53a92c;
+      border-radius: 5px;
+      text-align: center;
+      cursor: pointer;
+      position: absolute;
+      right: 20px;
+      bottom: 50%;
+      transform: translateY(-50%);
+      z-index: 9;
+
+      &:hover{
+        background: #53a92c;
+        border-color: #53a92c;
+        color: #fff;
+      }
+    }
+  }
+}
+/* ========================
+===== banner css ends =====
+===========================*/
