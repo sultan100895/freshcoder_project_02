@@ -1,13 +1,37 @@
 /* ===========================
 ===== counter css starts =====
 ==============================*/
-#counter{
+#counter-bg{
   background: #64b141;
   .items{
     padding-top: 80px;
     padding-bottom: 80px;
     i{
       font-size: 48px;
+    }
+    h2{
+      font-size: 36px;
+      font-weight: 700;
+      margin-top: 10px;
+      position: relative;
+      &::after{
+        content: "+";
+        position: absolute;
+        top: -2px;
+        right: 80px;
+      }
+    }
+    h3{
+      font-size: 36px;
+      font-weight: 700;
+      margin-top: 10px;
+      position: relative;
+      &::after{
+        content: "+";
+        position: absolute;
+        top: -2px;
+        right: 70px;
+      }
     }
     h5{
       font-size: 36px;

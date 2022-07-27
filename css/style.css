@@ -246,7 +246,9 @@ nav .navbar {
     width: 31.54%;
     float: left;
     margin-right: 20px;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden; }
     #recent .tab-content ul li h4 {
       font-size: 16px;
       font-weight: 700;
@@ -260,6 +262,23 @@ nav .navbar {
       padding-bottom: 15px; }
       #recent .tab-content ul li h5 span {
         color: #53a92c; }
+    #recent .tab-content ul li .dh-overlay {
+      position: absolute;
+      top: -100%;
+      left: 0;
+      background: rgba(52, 73, 94, 0.65);
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #recent .tab-content ul li .dh-overlay a {
+        color: #fff;
+        font-size: 30px;
+        transition: all linear 0.1s; }
+        #recent .tab-content ul li .dh-overlay a:hover {
+          color: #53a92c;
+          font-size: 36px; }
 
 #routine .tab-content ul li.active {
   background: var(--brand-cl); }
@@ -296,18 +315,38 @@ nav .navbar {
 /* ===========================
 ===== counter css starts =====
 ==============================*/
-#counter {
+#counter-bg {
   background: #64b141; }
-  #counter .items {
+  #counter-bg .items {
     padding-top: 80px;
     padding-bottom: 80px; }
-    #counter .items i {
+    #counter-bg .items i {
       font-size: 48px; }
-    #counter .items h5 {
+    #counter-bg .items h2 {
+      font-size: 36px;
+      font-weight: 700;
+      margin-top: 10px;
+      position: relative; }
+      #counter-bg .items h2::after {
+        content: "+";
+        position: absolute;
+        top: -2px;
+        right: 80px; }
+    #counter-bg .items h3 {
+      font-size: 36px;
+      font-weight: 700;
+      margin-top: 10px;
+      position: relative; }
+      #counter-bg .items h3::after {
+        content: "+";
+        position: absolute;
+        top: -2px;
+        right: 70px; }
+    #counter-bg .items h5 {
       font-size: 36px;
       font-weight: 700;
       margin-top: 10px; }
-    #counter .items h4 {
+    #counter-bg .items h4 {
       font-size: 16px;
       font-weight: 700;
       margin-top: 10px; }
@@ -355,7 +394,11 @@ nav .navbar {
           color: #fff;
           border: 1px solid #fff;
           border-radius: 5px;
-          padding: 5px 5px; }
+          padding: 5px 10px;
+          transition: all linear 0.3s; }
+          #collection .item .image-area .cart a:hover {
+            border-color: #53a92c;
+            background: #53a92c; }
     #collection .item h5 {
       font-size: 16px;
       font-weight: 700;
@@ -452,16 +495,14 @@ nav .navbar {
     font-size: 14px;
     margin-top: 10px; }
   #sponsors .image-area {
-    margin-top: 50px; }
+    margin-top: 50px;
+    transition: all linear 0.3s; }
     #sponsors .image-area img {
       cursor: pointer; }
+    #sponsors .image-area:hover {
+      -webkit-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.86);
+      box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.86); }
 
 /* ==========================
 ===== sponsors css ends =====
 =============================*/
-/* ==========================
-===== to top css starts =====
-=============================*/
-/* ========================
-===== to top css ends =====
-===========================*/

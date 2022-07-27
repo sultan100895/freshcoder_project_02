@@ -10,6 +10,22 @@ $(document).ready(function(){
     autoplaySpeed: 3000,
   });
 
+  //===== for counterup
+  $('.counter').counterUp({
+    delay: 10,
+    time: 1000
+  });
+
+  //===== for directional hover
+  $('li').directionalHover({
+        // CSS class for the overlay
+        overlay: "dh-overlay",
+        // Linear or swing
+        easing: "swing",
+        // <a href="https://www.jqueryscript.net/animation/">Animation</a> speed in ms
+        speed: 400
+      });
+
   //===== top scroll button
   var $button = $.backToTop({
           // background color
